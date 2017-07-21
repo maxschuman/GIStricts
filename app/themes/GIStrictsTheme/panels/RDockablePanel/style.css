@@ -1,0 +1,41 @@
+.jimu-rdockable-panel{
+  overflow: visible;
+}
+.jimu-rdockable-panel>.jimu-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.jimu-rdockable-panel>.bar{
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  width: 24px;
+  height: 60px;
+}
+.jimu-rtl .jimu-rdockable-panel>.bar{
+  right: -24px;
+  left: auto;
+  z-index: 5;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -ms-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); /* for IE8 */
+  transform: rotate(180deg);
+}
+.jimu-rdockable-panel>.bar.max{
+  background-image: url(images/close_default.png);
+}
+.jimu-rdockable-panel>.bar.max:hover{
+  background-image: url(images/close_hover.png);
+}
+.jimu-rdockable-panel>.bar.min{
+  background-image: url(images/open_default.png);
+}
+.jimu-rdockable-panel>.bar.min:hover{
+  background-image: url(images/open_hover.png);
+}
